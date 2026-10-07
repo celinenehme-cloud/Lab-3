@@ -5,36 +5,54 @@
 }   
 
 
-.header{
+.header {
     background-color: rgb(248, 206, 134) ;
-    grid-area: "hd";
+    grid-area: hd;
     text-align: center;
 }
 
-.sidebar{
+.sidebar {
     background-color: rgb(221, 115, 76) ;
     grid-area: sd;
 }
 
-.main{
+.main {
     background-color: rgb(248, 96, 152) ;
     grid-area: mn;
 }
 
 .footer{
-    background-color:rgb(248, 206, 134) ;
-    grid-area: "ft";
+    background-color: rgb(248, 206, 134) ;
+    grid-area: ft;
     text-align: center;
 }
 
+.nav{
+    padding: 10px;
+}
+
+.card-1{
+    background-color: rgb(237, 153, 184) ;
+}
+
+.card-2{
+    background-color: rgb(255, 184, 61) ;
+}
+
+.card-3{
+    background-color: rgb(160, 118, 91) ;
+}
+
+
 .page-layout{
     display: grid;
+    gap: 10px;
+
     grid-template-areas:
         "hd"
         "sd"
         "mn"
         "ft";
-        gap:10px;
 }
 
 
@@ -54,13 +72,13 @@
             "ft ft";
 }
 
-.main{
+.card-grid {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-}
+} 
 
-.card-1{
+.card-1 {
     grid-column: 1 / 3;
-}   
+}
 
 }
